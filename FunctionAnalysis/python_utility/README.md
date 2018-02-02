@@ -11,7 +11,7 @@ Instructions to calculate Functional coverage ratios for the three environments:
 - [Pallet](https://github.com/stardog-union/pellet/releases) reasoner. Download the archive and unzip in a directory to install.
 - Edit the python script file `main.py`:
   - Replace all strings `<PATH_TO_PALLET_REASONER_INSTALL_DIRECTORY>` with the install directory path (where Pallet reasoner files from it's archive were extracted).
-  - Replace `<PATH_TO_WORK_DOMAIN_ONTOLOGY>` with the location of the ___Work Domain Ontology___.
+  - Replace `<PATH_TO_WORK_DOMAIN_ONTOLOGY>` with the location of the [___Work Domain Ontology___](https://github.com/caCDE-QA/D2RefineUsabilityStudy/blob/master/FunctionAnalysis/WorkDomainOntology.owl).
 
 ## Usage:
 `python main.py`
