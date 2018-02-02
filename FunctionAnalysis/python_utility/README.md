@@ -1,24 +1,22 @@
-Please read following instructions to calculate Functional coverage ratios for the three environments:
+D2Refine Usability Study - Python Utility
+=========================================
 
-Please make sure you have installed the pre-requisite software packages and configured the 
-python utility script "main.py" properly.
+Instructions to calculate Functional coverage ratios for the three environments:
 
-Once you meet all the requirements (listed below), you can use the utility by typing the 
-command:
+## Pre-requisites:
 
-python main.py
+- [Python](https://www.python.org/) installed and configured properly.  
+- Python `pip` is recommeded to install Python packages. Python 2.7.9 and later versions include `pip`.
+- [MatPlot Lib](https://matplotlib.org/) should be installed. It can be installed using `pip` - `pip install matplotlib`.
+- [Pallet](https://github.com/stardog-union/pellet/releases) reasoner. Download the archive and unzip in a directory to install.
+- Edit the python script file `main.py`:
+  - Replace all strings `<PATH_TO_PALLET_REASONER_INSTALL_DIRECTORY>` with the install directory path (where Pallet reasoner files from it's archive were extracted).
+  - Replace `<PATH_TO_WORK_DOMAIN_ONTOLOGY>` with the location of the ___Work Domain Ontology___.
 
-Requirements:
-1. Python2 or Python3 installed and configured properly.
-2. The python library for plots is installed "MatPlotLib", available at "https://matplotlib.org/".
-3. The Sparql library for python has been installed and configured.
-4. The Pallet reasoner have been downloaded and installed properly
+## Usage:
+`python main.py`
 
-Provide values of two things (you can replace the strings in the file):
+## Output:
 
-1. Path to Install directory of Pallet reasoner. 
-Replace the string '<PATH_TO_PALLET_REASONER_INSTALL_DIRECTORY>'
-in the python script file 'main.py'.
-
-2. Path to the Work Domain Ontology (an OWL file). Replace the string '<PATH_TO_WORK_DOMAIN_ONTOLOGY>'
-in the python script file 'main.py'.
+- The files in sub-folder `data` would be updated with domain function saturation numbers.
+- The images of Venn diagrams would be updated in sub-folder `figures`
