@@ -104,7 +104,3 @@ for project in PROJECTS:
 
 draw.draw_example_venn()
 draw.draw_venn(LABELS, venn_data, totals)
-
-for project in PROJECTS + ["VSW"]:
-    workflow = workflows.parse_workflow('raw_workflows/%s_workflow.txt' % project)
-    workflows.to_dat(project, workflow)
