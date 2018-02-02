@@ -1,0 +1,3 @@
+D2Refine	96
+OntoMaton	85
+RightField	75

@@ -1,0 +1,2591 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://id.mayo.edu/vsw#"
+     xml:base="http://id.mayo.edu/vsw"
+     xmlns:untitled-ontology-30="http://www.semanticweb.org/dks02/ontologies/2017/1/untitled-ontology-30#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vsw="http://id.mayo.edu/vsw#">
+    <owl:Ontology rdf:about="http://id.mayo.edu/vsw#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://id.mayo.edu/vsw#implementedBy -->
+
+    <owl:ObjectProperty rdf:about="http://id.mayo.edu/vsw#implementedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://id.mayo.edu/vsw#Function"/>
+        <rdfs:range rdf:resource="http://id.mayo.edu/vsw#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#usedInActivitiesOf -->
+
+    <owl:ObjectProperty rdf:about="http://id.mayo.edu/vsw#usedInActivitiesOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://id.mayo.edu/vsw#Function"/>
+        <rdfs:range rdf:resource="http://id.mayo.edu/vsw#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#wantedByUserGroup -->
+
+    <owl:ObjectProperty rdf:about="http://id.mayo.edu/vsw#wantedByUserGroup">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://id.mayo.edu/vsw#Function"/>
+        <rdfs:range rdf:resource="http://id.mayo.edu/vsw#UserGroups"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#wantedByUsersOf -->
+
+    <owl:ObjectProperty rdf:about="http://id.mayo.edu/vsw#wantedByUsersOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://id.mayo.edu/vsw#Function"/>
+        <rdfs:range rdf:resource="http://id.mayo.edu/vsw#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://id.mayo.edu/vsw#description -->
+
+    <owl:DatatypeProperty rdf:about="http://id.mayo.edu/vsw#description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#productName -->
+
+    <owl:DatatypeProperty rdf:about="http://id.mayo.edu/vsw#productName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ActivityModelFunction -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ActivityModelFunction">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://id.mayo.edu/vsw#usedInActivitiesOf"/>
+                <owl:someValuesFrom rdf:resource="http://id.mayo.edu/vsw#Product"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#AddRemoveCTService -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#AddRemoveCTService">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Administer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#AddRemoveDEService -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#AddRemoveDEService">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Administer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#AddRemoveModelRepository -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#AddRemoveModelRepository">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Administer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#AddRemoveUserPreferences -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#AddRemoveUserPreferences">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Administer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#Administer -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#Administer">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ApplyValueSetToValidateLocalEntries -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ApplyValueSetToValidateLocalEntries">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Validate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#AuditTrailOfSearchAndBind -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#AuditTrailOfSearchAndBind">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Save"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CloneDataDictionary -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#CloneDataDictionary">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#CreateUpdate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CloneDataDictionaryVariable -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#CloneDataDictionaryVariable">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#CreateUpdate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#Collaborate -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#Collaborate">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CollectModelReviewFromSME -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#CollectModelReviewFromSME">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Collaborate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateADDUsingAScript -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#CreateADDUsingAScript">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#CreateUpdate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateANewValueSet -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#CreateANewValueSet">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#CreateUpdate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateComplexDDConstraint -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#CreateComplexDDConstraint">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#CreateUpdate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateDataDictionary -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#CreateDataDictionary">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#CreateUpdate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateDataDictionaryVersion -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#CreateDataDictionaryVersion">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Version"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateLocalCodeList -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#CreateLocalCodeList">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#CreateUpdate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateMappingBetweenDDs -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#CreateMappingBetweenDDs">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#CreateUpdate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateSimpleDDConstraint -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#CreateSimpleDDConstraint">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#CreateUpdate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateSummaryOfVersionChangeImpact -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#CreateSummaryOfVersionChangeImpact">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Version"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateUpdate -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#CreateUpdate">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateValidationConstraintsForInstanceData -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#CreateValidationConstraintsForInstanceData">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#CreateUpdate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#D2RefineActivityModelFunction -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#D2RefineActivityModelFunction">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://id.mayo.edu/vsw#usedInActivitiesOf"/>
+                <owl:hasValue rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#ActivityModelFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#D2RefineDesignerModelFunction -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#D2RefineDesignerModelFunction">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://id.mayo.edu/vsw#implementedBy"/>
+                <owl:hasValue rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#DesignerModelFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#D2RefineDomainFunction -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#D2RefineDomainFunction">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#DomainFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#D2RefineUserModelFunction -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#D2RefineUserModelFunction">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#UserModelFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#DesignerModelFunction -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#DesignerModelFunction">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://id.mayo.edu/vsw#implementedBy"/>
+                <owl:someValuesFrom rdf:resource="http://id.mayo.edu/vsw#Product"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#Develop -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#Develop">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#DevelopPlatformExtension -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#DevelopPlatformExtension">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Develop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#DomainFunction -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#DomainFunction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://id.mayo.edu/vsw#usedInActivitiesOf"/>
+                        <owl:someValuesFrom rdf:resource="http://id.mayo.edu/vsw#Product"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://id.mayo.edu/vsw#wantedByUserGroup"/>
+                        <owl:someValuesFrom rdf:resource="http://id.mayo.edu/vsw#UserGroups"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://id.mayo.edu/vsw#wantedByUsersOf"/>
+                        <owl:someValuesFrom rdf:resource="http://id.mayo.edu/vsw#Product"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#EnableContextSensitiveTerminologySelection -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#EnableContextSensitiveTerminologySelection">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Develop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#EnableDDComparison -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#EnableDDComparison">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Develop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#EnableDDWorkflow -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#EnableDDWorkflow">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Develop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#EnableInlineComplexEditChecks -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#EnableInlineComplexEditChecks">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Develop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#EnableReferenceModelConfigurable -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#EnableReferenceModelConfigurable">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Administer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#EnableSharingOnline -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#EnableSharingOnline">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Collaborate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#EnableStoringStudyRequest -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#EnableStoringStudyRequest">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Develop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#EnableToInjectContext -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#EnableToInjectContext">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Administer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#EnforceDocumentationForDD -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#EnforceDocumentationForDD">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Validate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#Export -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#Export">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportCFR21Part11CompliantDD -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ExportCFR21Part11CompliantDD">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Export"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportDDAsADL -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ExportDDAsADL">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Export"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportDDAsAML -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ExportDDAsAML">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Export"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportDDAsHL7FHIR -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ExportDDAsHL7FHIR">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Export"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportDDAsSpreadsheet -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ExportDDAsSpreadsheet">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Export"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportDDAsXMLJSON -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ExportDDAsXMLJSON">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Export"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportDDUsageInformation -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ExportDDUsageInformation">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Export"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportInAHumanReadableFormat -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ExportInAHumanReadableFormat">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Export"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportMappingsToCMSTemplates -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ExportMappingsToCMSTemplates">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Export"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportStepsToManageDD -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ExportStepsToManageDD">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Export"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportSystemSummary -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ExportSystemSummary">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Export"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#Function -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#Function">
+        <rdfs:comment>Base class for organizing the functions/features of the study environments.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#GroupSearchResults -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#GroupSearchResults">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Search"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#Import -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#Import">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ImportADLDD -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ImportADLDD">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Import"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ImportAMLDD -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ImportAMLDD">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Import"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ImportCFR21Part11CompliantDD -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ImportCFR21Part11CompliantDD">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Import"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ImportHL7FHIRDD -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ImportHL7FHIRDD">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Import"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ImportMappingsFromCMSTemplates -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ImportMappingsFromCMSTemplates">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Import"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ImportSpreadsheetDD -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ImportSpreadsheetDD">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Import"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ImportXMLJSONDD -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ImportXMLJSONDD">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Import"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#List -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#List">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ListExistingDataDictionaries -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ListExistingDataDictionaries">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#List"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ListExistingModels -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ListExistingModels">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#List"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ListRecommendedEncodedValues -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ListRecommendedEncodedValues">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#List"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ListVariableDependeciesInADD -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ListVariableDependeciesInADD">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#List"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ListVariableSummary -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ListVariableSummary">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#List"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#LoggingCreated -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#LoggingCreated">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Save"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#MaintainMappingToLegacyEncoding -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#MaintainMappingToLegacyEncoding">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Develop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ManageMultipleVersionsOfTerminologies -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ManageMultipleVersionsOfTerminologies">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Administer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#OntoMatonActivityModelFunction -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#OntoMatonActivityModelFunction">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://id.mayo.edu/vsw#usedInActivitiesOf"/>
+                <owl:hasValue rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#ActivityModelFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#OntoMatonDesignerModelFunction -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#OntoMatonDesignerModelFunction">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://id.mayo.edu/vsw#implementedBy"/>
+                <owl:hasValue rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#DesignerModelFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#OntoMatonDomainFunction -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#OntoMatonDomainFunction">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#DomainFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#OntoMatonUserModelFunction -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#OntoMatonUserModelFunction">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#UserModelFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#Product -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#Product">
+        <rdfs:comment rdf:resource="http://id.mayo.edu/vsw#productName"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#Reference -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#Reference">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ReferenceAControlledTerminology -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ReferenceAControlledTerminology">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Reference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ReferenceADataElement -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ReferenceADataElement">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Reference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ReferenceAModel -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ReferenceAModel">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Reference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ReferenceAValueSet -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ReferenceAValueSet">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Reference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ReferenceAnExistingDD -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ReferenceAnExistingDD">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Reference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ReferenceVSPermissibleValue -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ReferenceVSPermissibleValue">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Reference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#RightFieldActivityModelFunction -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#RightFieldActivityModelFunction">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://id.mayo.edu/vsw#usedInActivitiesOf"/>
+                <owl:hasValue rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#ActivityModelFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#RightFieldDesignerModelFunction -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#RightFieldDesignerModelFunction">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://id.mayo.edu/vsw#implementedBy"/>
+                <owl:hasValue rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#DesignerModelFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#RightFieldDomainFunction -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#RightFieldDomainFunction">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#DomainFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#RightFieldUserModelFunction -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#RightFieldUserModelFunction">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#UserModelFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#Save -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#Save">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveBackwardCompatibleSpreadsheet -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SaveBackwardCompatibleSpreadsheet">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Save"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveDDAsADL -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SaveDDAsADL">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Save"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveDDAsAML -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SaveDDAsAML">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Save"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveDDAsHL7FHIR -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SaveDDAsHL7FHIR">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Save"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveDDAsSpreadsheet -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SaveDDAsSpreadsheet">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Save"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveDDAsXMLJSON -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SaveDDAsXMLJSON">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Save"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveHistoryOfModelCreation -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SaveHistoryOfModelCreation">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Save"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveRegulatoryFormatCompliantDD -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SaveRegulatoryFormatCompliantDD">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Save"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveSourceDDProvenance -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SaveSourceDDProvenance">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Save"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveStepsToCreateDD -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SaveStepsToCreateDD">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Save"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#Search -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#Search">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchAlternateDefaultRepositories -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SearchAlternateDefaultRepositories">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Search"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchCodeSystemTerms -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SearchCodeSystemTerms">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Search"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchCodeSystems -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SearchCodeSystems">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Search"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchDataDictionaries -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SearchDataDictionaries">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Search"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchDefaultRepository -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SearchDefaultRepository">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Search"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchModelCreationHistory -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SearchModelCreationHistory">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Search"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchModelRanking -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SearchModelRanking">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Search"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchModels -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SearchModels">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Search"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchPermissibleValues -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SearchPermissibleValues">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Search"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchSimilarDDs -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SearchSimilarDDs">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Search"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchSingleTermBinding -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SearchSingleTermBinding">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#SearchTermBindings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchTermBindings -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SearchTermBindings">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Search"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchTermBindingsInBatchMode -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SearchTermBindingsInBatchMode">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#SearchTermBindings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchTermsInBatchAutomatedMode -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SearchTermsInBatchAutomatedMode">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#SearchCodeSystemTerms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchTermsOfACodeSystem -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SearchTermsOfACodeSystem">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#SearchCodeSystemTerms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchValueSets -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SearchValueSets">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Search"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchValueSetsBasedOnSetOfPermissibleValues -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SearchValueSetsBasedOnSetOfPermissibleValues">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Search"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchWithContextAssociated -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SearchWithContextAssociated">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Search"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SecondarySearchForDetailsOnMatches -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SecondarySearchForDetailsOnMatches">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Search"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SelectAControlledTerminology -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SelectAControlledTerminology">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Administer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SelectModelRepository -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SelectModelRepository">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Administer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SelectMultipleControlledTerminologies -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#SelectMultipleControlledTerminologies">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Administer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ShareDataDictionary -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ShareDataDictionary">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Collaborate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#TrackChangesInTerminologyAmongVersions -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#TrackChangesInTerminologyAmongVersions">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Administer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#UpdateDataDictionary -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#UpdateDataDictionary">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#CreateUpdate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#UserGroups -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#UserGroups"/>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#UserModelFunction -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#UserModelFunction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://id.mayo.edu/vsw#wantedByUserGroup"/>
+                        <owl:someValuesFrom rdf:resource="http://id.mayo.edu/vsw#UserGroups"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://id.mayo.edu/vsw#wantedByUsersOf"/>
+                        <owl:someValuesFrom rdf:resource="http://id.mayo.edu/vsw#Product"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#Validate -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#Validate">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ValidateDDAgainstStudyProtocol -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ValidateDDAgainstStudyProtocol">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Validate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ValidateDataDictionaryMetadata -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#ValidateDataDictionaryMetadata">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Validate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#Version -->
+
+    <owl:Class rdf:about="http://id.mayo.edu/vsw#Version">
+        <rdfs:subClassOf rdf:resource="http://id.mayo.edu/vsw#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://id.mayo.edu/vsw#AddRemoveControlledTerminology -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#AddRemoveControlledTerminology">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#AddRemoveCTService"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to add or remove sources of controlled terminologies.  The terms from these controlled terminologies would be used for standardization of various elements of a data dictionary.  These controlled terminolgies can be locally defined or standard controlled terminolgies.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#AddRemoveDataElementRepository -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#AddRemoveDataElementRepository">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#AddRemoveDEService"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <description>User should be able to add or remove sources of existing Data Elements.  The Data Elements would be re-used for creating new models or referenced for information.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#AddRemoveModelRepositories -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#AddRemoveModelRepositories">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#AddRemoveModelRepository"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#AddRemoveUserPreferences -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#AddRemoveUserPreferences">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#AddRemoveUserPreferences"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#AllUsers -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#AllUsers">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#UserGroups"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ApplyValueSetToValidateLocalEntries -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ApplyValueSetToValidateLocalEntries">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ApplyValueSetToValidateLocalEntries"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to validate any existing (local or shared) encoded values of a DD variable using the selected value set reference.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#AuditTrailOfSearchAndBind -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#AuditTrailOfSearchAndBind">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#AuditTrailOfSearchAndBind"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>System creates User visible audit record of user search and bind operation history.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#BatchTermSearch -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#BatchTermSearch">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SearchTermBindingsInBatchMode"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#VocabularyEngineers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to search existing term bindings in a batch mode - for multiple search phrases.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CloneDataDictionary -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#CloneDataDictionary">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#CloneDataDictionary"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to clone an existing data dictionary for the purpose of editing it or extending it instead of importing it as it.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CloneDataDictionaryVariableDefinition -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#CloneDataDictionaryVariableDefinition">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#CloneDataDictionaryVariable"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to clone a variable of an existing data dictionary for the purpose of extending or modifying it.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CollectModelReviewFromSME -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#CollectModelReviewFromSME">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#CollectModelReviewFromSME"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>Environment should provide a way to collect review or feedback from SME for a model.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateADDUsingAScript -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#CreateADDUsingAScript">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#CreateADDUsingAScript"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to use a script to create a DD. This script could have been created by exporting out the steps of another DD that was created. User can change little bit in it and reexecute/use it to create a new one.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateANewValueSet -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#CreateANewValueSet">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#CreateANewValueSet"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to create a new value set using the environment.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateComplexDDConstraint -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#CreateComplexDDConstraint">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#CreateComplexDDConstraint"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <description>User should be able to create complex constraints - importing and referencing existing constraints, data elements, models and/or reference archetypes.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateDDVersion -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#CreateDDVersion">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#CreateDataDictionaryVersion"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to persist the DD version.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateLocalCodeList -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#CreateLocalCodeList">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#CreateLocalCodeList"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <description>User should be able to create a code list or mappings to be used in creating DD constraints. Local ValueSets with permissible values.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateMappingsBetweenDDs -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#CreateMappingsBetweenDDs">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#CreateMappingBetweenDDs"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <description>User should be able to map between two DDs. Hopefull two similar DDs.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateNewDataDictionary -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#CreateNewDataDictionary">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#CreateDataDictionary"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to create a new data dictionary from scratch.  This data dictionary will use existing metadata definition or from a Standard Template that lets user start defining constaints.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateSimpleDDConstraint -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#CreateSimpleDDConstraint">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#CreateSimpleDDConstraint"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#AllUsers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to create a simple data dictionary constraint. Name, primary types, values (default, range), unit of measure etc.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateSummaryOfVersionChangeImpact -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#CreateSummaryOfVersionChangeImpact">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#CreateSummaryOfVersionChangeImpact"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <description>When a metadata or value set change is planned, the tool should provide a means of modeling the impact to the applications and business processes – both the input side (origin of the metadata) and the consumption side.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#CreateValidationConstraintsForInstanceData -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#CreateValidationConstraintsForInstanceData">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#CreateValidationConstraintsForInstanceData"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>Specify constraints for the instance data. RightFirled specifies it by annotating terminology bindings by specifying what class/subclasses (direc/indirect) the instance data can conforms to.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#D2Refine -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#D2Refine">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#Product"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>D2Refine is standardization and harmonization platform.  D2Refine works with OpenRefine (formerly known as Google Refine).  Data dictionaries are creating in your local environment and are not shared or online.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#DevelopPlatformExtension -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#DevelopPlatformExtension">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#DevelopPlatformExtension"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <description>User should be able to extend the platform to introduce new functionality.  The plugin could be in any other language than what is used to develop the platform.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#EnableContextSensitiveTerminologySelection -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#EnableContextSensitiveTerminologySelection">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#EnableContextSensitiveTerminologySelection"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>Investigator can select and describe their preferences when using controlled vocabulary and communicate them to study developers.
+Selection of controlled terminology should be automatic – basic on context.  Study related to lung cancer should not even load brain cancer domain.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#EnableDDComparison -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#EnableDDComparison">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#EnableDDComparison"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <description>User should be able to compare two DDs</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#EnableDDWorkflow -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#EnableDDWorkflow">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#EnableDDWorkflow"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <description>When multiple study developers work on the same study then versioning and collaborating can be confusing.  Collaborating workflow to develop studies could be better</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#EnableInlineComplexEditChecks -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#EnableInlineComplexEditChecks">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#EnableInlineComplexEditChecks"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <description>Complex edit checks are not supported. Edit checks are validity rules.  You have to create multiple sub-constraints to support an edit check.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#EnableReferenceModelConfigurable -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#EnableReferenceModelConfigurable">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#EnableReferenceModelConfigurable"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <description>Environment make it possible to work with multiple reference models.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#EnableSharingOnline -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#EnableSharingOnline">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#EnableSharingOnline"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <description>Environment allows online sharing</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#EnableStoringStudyRequest -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#EnableStoringStudyRequest">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#EnableStoringStudyRequest"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <description>Environment should provide a way to store description, steps that are requested by the researcher - guides the way CRFs created.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#EnableToInjectContext -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#EnableToInjectContext">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#EnableToInjectContext"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <description>Environment should allow configuration and injection of user context.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#EnforceDocumentationForDD -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#EnforceDocumentationForDD">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#EnforceDocumentationForDD"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <description>Enforce User to put in some documentation for a Study and variable.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportAsADL -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ExportAsADL">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ExportDDAsADL"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <description>User should be able to export a model into ADL format (OpenEHR&apos;s Archetype Definition Language).</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportAsAML -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ExportAsAML">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ExportDDAsAML"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <description>User should be able to export DD as OMG&apos;s Archetype Modeling Language document (UML diagram)</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportAsHL7FHIR -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ExportAsHL7FHIR">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ExportDDAsHL7FHIR"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <description>User should be able to export data dictionary as HL7 FHIR document (either a resource or a profile)</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportAsSpreadsheet -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ExportAsSpreadsheet">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ExportDDAsSpreadsheet"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be ablet to export data dictionary as a spreadsheet (Microsoft Excel, CSV, tab delimited) or equivalent.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportAsXMLJSON -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ExportAsXMLJSON">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ExportDDAsXMLJSON"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to export DD as XML or JSON.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportCFR21Part11CompliantDD -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ExportCFR21Part11CompliantDD">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ExportCFR21Part11CompliantDD"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <description>Study should export or compliant to CFR21Part11 standard/requirement (Federal)</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportDDUsageInformation -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ExportDDUsageInformation">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ExportDDUsageInformation"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <description>Users would like to get some additional, supporting information - on how to use a DD.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportInAHumanReadableFormat -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ExportInAHumanReadableFormat">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ExportInAHumanReadableFormat"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <description>User should be able to generate a easy to read, human readable format - like MSWord, from a data dictionary or for the whole study or a collection of  CRFs.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportMappingsToCMSTemplates -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ExportMappingsToCMSTemplates">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ExportMappingsToCMSTemplates"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <description>System should be able to generate templates for CMS like template. It should also generate what value-sets and permissible values it should use. It should also list ther terminologies and possible mappings needed to make local terminology work.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportStepsToCreateAndManageDD -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ExportStepsToCreateAndManageDD">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ExportStepsToManageDD"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>Environment should be able to export the steps to create and manage a DD that could be applied again.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ExportSystemSummaryForaGivenUserOrEnvironment -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ExportSystemSummaryForaGivenUserOrEnvironment">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ExportSystemSummary"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <description>User should be able to generate a report or summary of what we have and what has been happening.
+Would love to have capabilities to know what version of the value-sets, terms we are using. Having to be able to get them from previous versions or see how they have changed. Like to know mapping that has happened over time and how a CT entity has changed since its inception. Example transition from ICD-9 to ICD-10 – make sure we are coding the right way.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#GroupSearchResults -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#GroupSearchResults">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#GroupSearchResults"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <description>User is presented with grouped serach results to receive and select to bind.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ITProfessionals -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ITProfessionals">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#UserGroups"/>
+        <description>This user group is for Information Technology Developers, who are relevant to this study as developers of interfces to the products being studied.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ImportADLDD -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ImportADLDD">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ImportADLDD"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <description>User Should be able to import existing DD in its ADL (Archetype Definition Language) format.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ImportAMLDD -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ImportAMLDD">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ImportAMLDD"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <description>User should be able to import DD in its AML (Archetype Modeling Language) format.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ImportCFR21Part11CompliantDD -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ImportCFR21Part11CompliantDD">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ImportCFR21Part11CompliantDD"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <description>System should be able to import a complaint DD</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ImportHL7FHIRDD -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ImportHL7FHIRDD">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ImportHL7FHIRDD"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <description>User should be able to import a DD in HL7FHIR resource/Profile format.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ImportMappingsFromCMSTemplates -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ImportMappingsFromCMSTemplates">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ImportMappingsFromCMSTemplates"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <description>System should be able to import tempalates from a CMS like SiteCore and create DDs and Study components.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ImportSpreadsheetDD -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ImportSpreadsheetDD">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ImportSpreadsheetDD"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to import a DD in its spreadsheet format.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ListDependenciesAmongVariablesOfDD -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ListDependenciesAmongVariablesOfDD">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ListVariableDependeciesInADD"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <description>There should be a way to list what all dependencies a variable has.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ListExistingDDs -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ListExistingDDs">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ListExistingDataDictionaries"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to list data dictionaries accessible/authorized.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ListExistingModels -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ListExistingModels">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ListExistingModels"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ListRecommendedEncodedValues -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ListRecommendedEncodedValues">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ListRecommendedEncodedValues"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <description>User should able to list recommended enumerated values that could be used -
+Note From StudyDeveloper:
+Coding requires additional edit-checks – for example instead of using 0/1 for N/Y. The binary choices have to be aligned to SAS (0/1), but RAVE thinks 0 is missing, so we end-up using 1 and 2. So to align these choices, there are edit-checks that have to be implemented. Standardizing these values would definitely help.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ListVariableSummary -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ListVariableSummary">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ListVariableSummary"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <description>There should be a way to list the summary of a variable in a DD.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#LoggingCreated -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#LoggingCreated">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#LoggingCreated"/>
+        <description>System logs the process</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#MaintainMappingtoLegacyEncoding -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#MaintainMappingtoLegacyEncoding">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#MaintainMappingToLegacyEncoding"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <description>Study constraints should maintain mappings to the legacy CRFs or old codes. People have been used to using the code they have been using for years. Find a solution.
+Investigators are collecting values with predefined value-sets and they don’t want to change. (if they use 1-male, 2- female, they don’t want to change).
+Trying to keep track of versions and legacy data (that might have used previous versions of controlled terminologies) is a nightmare to manage.  Example – data is from 1965 but practice has changed a lot since then.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ManageMultipleVersionsOfControlledTerminologies -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ManageMultipleVersionsOfControlledTerminologies">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ManageMultipleVersionsOfTerminologies"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to see multiple available versions of controlled terminolgies.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#MetadataDeveloper -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#MetadataDeveloper">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#UserGroups"/>
+        <description>Metadata developer are users who design metadata elements of a data dictionary or clinical models.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#OntoMaton -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#OntoMaton">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#Product"/>
+        <description>OntoMaton is a plugin to Google Spreadsheets for creating data dictionaries using Google Spreadsheet.  The data dictionaries are created in your Google account and are online.</description>
+        <productName>OntoMaton</productName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ReferenceAControlledTerminologyTerm -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ReferenceAControlledTerminologyTerm">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ReferenceAControlledTerminology"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#VocabularyEngineers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to reference a term from select controlled terminologies from previously configured controlled terminology resources.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ReferenceADataElement -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ReferenceADataElement">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ReferenceADataElement"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <description>User should be able to refernce an existing data element from previously configured DE repositories.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ReferenceAModel -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ReferenceAModel">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ReferenceAModel"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <description>User should be able to reference an existing model local or shared.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ReferenceAValueSet -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ReferenceAValueSet">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ReferenceAValueSet"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#VocabularyEngineers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to reference a value-set for possible use of creating a constraint or validation.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ReferenceAnExistingDD -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ReferenceAnExistingDD">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ReferenceAnExistingDD"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <description>User should be able to reference a DD</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ReferenceVSPermissibleValue -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ReferenceVSPermissibleValue">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ReferenceVSPermissibleValue"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to reference a particular permissible value in a value set.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#Researchers -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#Researchers">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#UserGroups"/>
+        <description>Researchers are group of people who are researching in the field of Medical Informatics - Clinical Model Development and thier interoperability.  These researchers focus on standardization, harmonization or clinical models and their dissemination to enhance interoperability.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#RightField -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#RightField">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#Product"/>
+        <description>RightField is a desktop tool to create data dictionary using Microsoft Excel. Rightfield is implemented using Java libraries for Microsoft Excel and the data dictionaries are created locally and not shared or online.</description>
+        <productName>RightField</productName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveAsADL -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SaveAsADL">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SaveDDAsADL"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <description>User should be able to save the file as Archetype Definition Language format</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveAsAML -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SaveAsAML">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SaveDDAsAML"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <description>User Should be able to store data dictionary as Archetype Modeling Language format (UML Diagram)</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveAsSpreadsheet -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SaveAsSpreadsheet">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SaveDDAsSpreadsheet"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <description>Data dictionary can be saved as a regular spreadsheet with header as column names (metadata).  It must preserves the links or term bindings created by the user.  The acceptable formats are tab/comma separated.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveAsXMLJSON -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SaveAsXMLJSON">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SaveDDAsXMLJSON"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <description>User should be able to save the data dictionary in XML or JSON</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveBackwardCompatibleSpreadsheet -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SaveBackwardCompatibleSpreadsheet">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SaveBackwardCompatibleSpreadsheet"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to save spreadsheet which is backward compatible.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveDDAsHL7FHIR -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SaveDDAsHL7FHIR">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SaveDDAsHL7FHIR"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <description>User should be able to save the data dictionary as an HL7 FHIR artifact (Hl7 FHIR Profile)</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveHistoryOfModelCreation -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SaveHistoryOfModelCreation">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SaveHistoryOfModelCreation"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <description>Environment saves the details and steps details, decisions that a modeler makes to create a model. why s/he uses a particular valueset or permissible value etc.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveRegulatoryFormatCompliant -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SaveRegulatoryFormatCompliant">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SaveRegulatoryFormatCompliantDD"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>Save DD in a format that is required by regulatory bodies like FDA, CDISC etc.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveSourceDDProvenance -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SaveSourceDDProvenance">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SaveSourceDDProvenance"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>When you create a study, store it and load it back, you lose the copy sources (like edit checks, global sources).  It loses the provenance information.   It is tedious to look back and check with history of various version of study.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SaveStepsToCreateDD -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SaveStepsToCreateDD">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SaveStepsToCreateDD"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to record the steps of creating a DD. So that it could be repeated if needed</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchAlternateDefaultRepositories -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SearchAlternateDefaultRepositories">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SearchAlternateDefaultRepositories"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <description>User can select alternately configured  default repositories.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchAvailableCodeSystems -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SearchAvailableCodeSystems">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SearchCodeSystems"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#VocabularyEngineers"/>
+        <description>User should be able to lookup what all code systems are available to search.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchAvailableValueSets -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SearchAvailableValueSets">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SearchValueSets"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#VocabularyEngineers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to lookup available value-sets.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchClinicalModels -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SearchClinicalModels">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SearchModels"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to search for existing Clinical Models for potential use in creating new DDs or models.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchDefaultRepository -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SearchDefaultRepository">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SearchDefaultRepository"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User&apos;s search request are sent to a default CT Repository</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchExistingDDs -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SearchExistingDDs">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SearchDataDictionaries"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to search existing data dictionaries he is allowed to.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchModelCreationHistory -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SearchModelCreationHistory">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SearchModelCreationHistory"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <description>User should be able to look into the history of how the model was created. what decisions the modeler took and why?</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchModelRanking -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SearchModelRanking">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SearchModelRanking"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to retrieve information about how good a model is.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchPermissibleValueOfSelectedValueSet -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SearchPermissibleValueOfSelectedValueSet">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SearchPermissibleValues"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchSimilarDDs -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SearchSimilarDDs">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SearchSimilarDDs"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <description>User should be able to search DDs which are similar or identical to what they are going to create or matches their collection of variables.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchTemsInBatchAutomatedMode -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SearchTemsInBatchAutomatedMode">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SearchTermsInBatchAutomatedMode"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#VocabularyEngineers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to execute search terms of all code systems selected in a batch mode.  All the selected keyphrases will be used to find suitable matching terms.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchTermsOfACodeSystem -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SearchTermsOfACodeSystem">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SearchTermsOfACodeSystem"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#VocabularyEngineers"/>
+        <description>User should be able to search terms in a selected set of code systems.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchValueSetsBasedOnSetOfPermissibleValues -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SearchValueSetsBasedOnSetOfPermissibleValues">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SearchValueSetsBasedOnSetOfPermissibleValues"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to align what all permissible values s/he has and how well it aligns with standard or available (local/shared) value-sets.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SearchWithContextAssociated -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SearchWithContextAssociated">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SearchWithContextAssociated"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <description>User should be able to make use of context when searching.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SecondarySearchForDetailsOnMatches -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SecondarySearchForDetailsOnMatches">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SecondarySearchForDetailsOnMatches"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>Launch a secondary serach on the results matches found.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SelectAControlledTerminology -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SelectAControlledTerminology">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SelectAControlledTerminology"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to select controlled terminologies from configured set of controlled terminology sources.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SelectModels -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SelectModels">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SelectModelRepository"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <description>User should be able to browse and select Models from previously configured Model Repositories</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SelectMultipleControlledTerminologies -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SelectMultipleControlledTerminologies">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SelectMultipleControlledTerminologies"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to select multiple controlled terminolgies to find content.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ShareDataDictionary -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ShareDataDictionary">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ShareDataDictionary"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to share data dictionaries.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#SingleTermSearch -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#SingleTermSearch">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#SearchSingleTermBinding"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#VocabularyEngineers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to search for a single term binding for given search phrase or condition.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#StudyDevelopers -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#StudyDevelopers">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#UserGroups"/>
+        <description>These users are the study developers, who are real users of the platforms and solution toolkits used to create data dictionaries, case report forms, clinical archetypes or dataset definitions.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#TrackChangesToATerminologyAmongVersion -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#TrackChangesToATerminologyAmongVersion">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#TrackChangesInTerminologyAmongVersions"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>User should be able to see what changes have happened between two versions of a controlled terminology</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#UpdateDataDictionary -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#UpdateDataDictionary">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#UpdateDataDictionary"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <usedInActivitiesOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#MetadataDeveloper"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>This function lets user define and configure data dictionary to get started defining with constraints. Please note that the data dictionary metadata may or may not follow a standard way of defining variables of a data dictionary.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ValidateDDAgainstStudyProtocol -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ValidateDDAgainstStudyProtocol">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ValidateDDAgainstStudyProtocol"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#StudyDevelopers"/>
+        <description>StudyDeveloper should be able to validate CRFs against a given study protocol.  This requires study protocol or workflow stored in the environemnt or availabe somehow to run validation.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#ValidateDDMetadata -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#ValidateDDMetadata">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ValidateDataDictionaryMetadata"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#RightField"/>
+        <description>There should be a mechanism to validate the meatadata of a DD.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#VocabularyEngineers -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#VocabularyEngineers">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#UserGroups"/>
+        <description>These users focus on managing controlled vocabularies/terminologies.  These terminologies could be locally defined code-lists and their descriptions or standard terminologies like SNOMED-CT, or ICD-10. Vocabulary Engineers also define value-sets and work on thier resolution using local and standard terminologies.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.mayo.edu/vsw#importXMLJSONDD -->
+
+    <owl:NamedIndividual rdf:about="http://id.mayo.edu/vsw#importXMLJSONDD">
+        <rdf:type rdf:resource="http://id.mayo.edu/vsw#ImportXMLJSONDD"/>
+        <implementedBy rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#ITProfessionals"/>
+        <wantedByUserGroup rdf:resource="http://id.mayo.edu/vsw#Researchers"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#D2Refine"/>
+        <wantedByUsersOf rdf:resource="http://id.mayo.edu/vsw#OntoMaton"/>
+        <description>User should be able to import a DD in its XML/JSON format.</description>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
